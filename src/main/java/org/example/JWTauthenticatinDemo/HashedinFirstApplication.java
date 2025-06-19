@@ -1,4 +1,4 @@
-package org.example.hashedinfirst;
+package org.example.JWTauthenticatinDemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

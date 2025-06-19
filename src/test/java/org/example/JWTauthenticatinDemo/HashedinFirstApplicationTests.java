@@ -1,4 +1,4 @@
-package org.example.hashedinfirst;
+package org.example.JWTauthenticatinDemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

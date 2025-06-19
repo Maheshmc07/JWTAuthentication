@@ -1,4 +1,4 @@
-package org.example.hashedinfirst.Entities;
+package org.example.JWTauthenticatinDemo.Entities;
 
 
 import jakarta.persistence.Entity;

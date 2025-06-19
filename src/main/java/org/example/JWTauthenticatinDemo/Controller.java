@@ -1,4 +1,4 @@
-package org.example.hashedinfirst;
+package org.example.JWTauthenticatinDemo;
 
 
 import org.springframework.web.bind.annotation.GetMapping;

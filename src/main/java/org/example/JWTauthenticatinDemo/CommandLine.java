@@ -1,7 +1,7 @@
-package org.example.hashedinfirst;
+package org.example.JWTauthenticatinDemo;
 
-import org.example.hashedinfirst.Entities.User;
-import org.example.hashedinfirst.Respositories.UserRepo;
+import org.example.JWTauthenticatinDemo.Entities.User;
+import org.example.JWTauthenticatinDemo.Respositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
