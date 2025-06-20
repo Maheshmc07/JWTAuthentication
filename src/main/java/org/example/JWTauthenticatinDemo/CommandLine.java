@@ -1,6 +1,7 @@
 package org.example.JWTauthenticatinDemo;
 
 import org.example.JWTauthenticatinDemo.Entities.User;
+import org.example.JWTauthenticatinDemo.Entities.role;
 import org.example.JWTauthenticatinDemo.Respositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -21,15 +22,26 @@ public class CommandLine implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        if (userRepo.findByUserName("Mahesh Chandra").isEmpty()) {
+
             User user = new User();
             user.setUserName("Mahesh Chandra");
             user.setPassword(passwordEncoder.encode("123123"));
-            user.setRole("USER");
+            user.setRole(role.valueOf("USER"));
             userRepo.save(user);
             System.out.println("New user created");
-        } else {
-            System.out.println("User already exists");
-        }
+
+
+        User user2 = new User();
+        user2.setUserName("Jaswanth");
+        user2.setPassword(passwordEncoder.encode("1231234"));
+        user2.setRole(role.valueOf("ADMIN"));
+        userRepo.save(user2);
+        System.out.println("New 2 user created");
+
+
+
+
+
+
     }
 }

@@ -17,7 +17,7 @@ public class JWTutil {
     private final SecretKey SECRETEKEY= Keys.hmacShaKeyFor(SECRET.getBytes());
 
 
-   public final long Expiration=1000*60*60;
+   public final long Expiration=1000*60*60*60;
     public String generateToken(AuthRequest authRequest){
 
         String token=Jwts.builder().setSubject(authRequest.getUsername())
